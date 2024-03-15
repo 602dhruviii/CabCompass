@@ -112,17 +112,16 @@ router.put('/cabs/:id', async (req, res) => {
     }
 });
 
-// Delete a cab
+//delte cab
 router.delete('/cabs/:id', async (req, res) => {
     const { id } = req.params;
 
     try {
-        const cab = await Cab.findById(id);
+        const cab = await Cab.findByIdAndDelete(id);
         if (!cab) {
             return res.status(404).json({ success: false, message: 'Cab not found' });
         }
 
-        await cab.remove();
         res.status(200).json({ success: true, message: 'Cab deleted successfully' });
     } catch (error) {
         console.error('Error deleting cab:', error);

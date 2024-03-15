@@ -80,7 +80,6 @@ const CabDetails = () => {
   };
   
   
-
   const handleDelete = async (id) => {
     // Confirm with the user before deleting
     const confirmDelete = window.confirm('Are you sure you want to delete this cab?');
@@ -88,7 +87,7 @@ const CabDetails = () => {
   
     // Send a DELETE request to the backend
     try {
-      await axios.delete(`https://cabcompass-2.onrender.com/cabs/${id}`);
+      await axios.delete(`http://localhost:5000/cabs/${id}`);
       alert('Cab deleted successfully!');
       fetchCabs(); // Fetch updated list of cabs after deleting
     } catch (error) {
