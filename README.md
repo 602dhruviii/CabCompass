@@ -23,11 +23,7 @@ To run the CabCompass project locally, follow these steps:
 
 * Clone the repository to your local machine:
 ```bash
-git clone https://github.com/602dhruviii/cabcompass.git
-```
-* Navigate to the project directory:
-```bash
-cd cabcompass
+git clone https://github.com/602dhruviii/CabCompass.git
 ```
 * Install dependencies for the backend (Node.js and Express.js):
 ```bash
@@ -35,7 +31,7 @@ npm install
 ```
 * Install dependencies for the frontend (React.js):
 ```bash
-cd client
+cd cab-booking-frontend
 npm install
 ```
 * Create a .env file in the root directory.
@@ -62,7 +58,7 @@ npm start
 Receive a booking confirmation email with trip details.
 
 ## Live View
-- ***[CabCompass](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)***
+- ***[CabCompass](https://cabcompass-3.onrender.com)***
 
 
 ## Screenshots and Visual Aids

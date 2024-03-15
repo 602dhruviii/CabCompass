@@ -124,23 +124,25 @@
     transform: translateY(-50%);
   }
   .car-moving {
-    position: absolute;
-    top: 40%;
+    position:static;
+    margin-top: 10%;
+    margin-left: 6%;
     left: 50%;
-    transform: translate(50%, 50%);    
+    height: 250px;
+    transform: translate(5%, 5%);    
     animation: moveCar 7s linear infinite; 
    
   }
 
   @keyframes moveCar {
     0% {
-      transform: translateX(150%);
+      transform: translateX(100%);
     }
     50% {
       transform: translateX(-20%);
     }
     100%{
-        transform: translateX(150%);
+        transform: translateX(100%);
     }
   }
   
