@@ -1,0 +1,71 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Whisper&display=swap');
+
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+
+}
+h2{
+  color:orange;
+  font-size:xx-large;
+}
+.left-panel {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  
+  border-right: 0.05px solid rgb(210, 204, 204);
+  overflow-y: auto; 
+}
+
+.right-panel {
+  flex: 6;
+  background-color: #fff;
+  padding: 20px;
+  overflow-y: auto; 
+}
+
+
+.left-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-panel li {
+  margin-bottom: 30px;
+  padding: 2%;
+}
+.left-panel li:hover {
+  color: orange;
+}
+
+.left-panel .link-icon:hover {
+  filter: invert(0%); 
+}
+.left-panel .link-icon {
+  filter: invert(50%); 
+  width: 30px; 
+  height: auto; 
+  margin-right: 30px; 
+}
+
+.left-panel a {
+  display: flex; 
+  align-items: center; 
+  text-decoration: none;
+  color: rgb(66, 50, 50); 
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.left-panel a {
+  font-size: 18px;
+}
+.createbooking{
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+}

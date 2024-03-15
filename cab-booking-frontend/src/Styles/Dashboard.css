@@ -1,0 +1,58 @@
+.dashboard-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  .dashlogos{
+   width: 100px; 
+  }
+  p{
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .db{
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  
+  .dashboard-box {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    font-size: 18px; 
+  }
+  
+  .latest-bookings-table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 25px; 
+  }
+ 
+  
+  .latest-bookings-table th,
+  .latest-bookings-table td {
+    border: 1px solid #ddd;
+    padding: 12px; 
+  }
+  
+  .latest-bookings-table th {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .latest-bookings-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .latest-bookings-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  

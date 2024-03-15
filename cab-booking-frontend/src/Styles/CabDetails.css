@@ -1,0 +1,146 @@
+.cab-form-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .cab-form {
+    display: flex;
+    flex-direction: column;
+    max-width:fit-content;
+    padding: 40px;
+    border: 1px solid #ffffff;
+    margin: 0;
+    border-radius: 5px;
+    background-color: #fbf6ef;
+  }
+  
+  .cab-form label {
+    margin-bottom: 10px;
+  }
+  
+  .cab-form input[type="text"],
+  .cab-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .cab-form button {
+    padding: 10px 20px;
+    background-color: rgb(254, 179, 58);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color:rgb(43, 30, 30);
+    font-weight: 800;
+    font-size: large;
+  }
+  
+  .cab-form button:hover {
+    background-color: rgb(243, 158, 0);
+    
+  }
+  
+
+.cab-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  .cab-table th,
+  .cab-table td {
+    
+    padding: 8px;
+  }
+  
+  .cab-table th {
+    background-color: orange;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+
+  
+  .cab-table tbody tr:hover {
+    background-color: #fdd07c;
+  }
+
+.edit-btn {
+    background-color: #f2efe6; 
+    color: #5f4646; 
+    border:2.4px solid #fdbe70;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    background-color: #ffc400; 
+    color: #4b3f3f; 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+
+
+.filter-container {
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: 600;
+  }
+
+  .filter-dropdown {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+
+  .filter-dropdown option {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+
+  .filter-dropdown::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  .car-moving {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(50%, 50%);    
+    animation: moveCar 7s linear infinite; 
+   
+  }
+
+  @keyframes moveCar {
+    0% {
+      transform: translateX(150%);
+    }
+    50% {
+      transform: translateX(-20%);
+    }
+    100%{
+        transform: translateX(150%);
+    }
+  }
+  
