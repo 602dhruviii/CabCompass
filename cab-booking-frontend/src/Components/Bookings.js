@@ -12,9 +12,9 @@ const Bookings= () => {
 
   const fetchBookings = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/bookings');
+      const response = await axios.get('https://cabcompass-2.onrender.com/bookings');
       const bookingData = await Promise.all(response.data.map(async booking => {
-        const cabResponse = await axios.get(`http://localhost:5000/cabs/${booking.cabId}`);
+        const cabResponse = await axios.get(`https://cabcompass-2.onrender.com/cabs/${booking.cabId}`);
         const cabName = cabResponse.data.name;
         return { ...booking, cabName };
       }));

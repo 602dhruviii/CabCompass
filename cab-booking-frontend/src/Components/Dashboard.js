@@ -19,8 +19,8 @@ const Dashboard = () => {
 
   const fetchDashboardData = async () => {
     try {
-      const bookingResponse = await axios.get('http://localhost:5000/bookings');
-      const cabResponse = await axios.get('http://localhost:5000/cabs');
+      const bookingResponse = await axios.get('https://cabcompass-2.onrender.com/bookings');
+      const cabResponse = await axios.get('https://cabcompass-2.onrender.com/cabs');
 
       const totalBookingsCount = bookingResponse.data.length;
       const totalCabsCount = cabResponse.data.length;
@@ -39,7 +39,7 @@ const Dashboard = () => {
   };
   const fetchLatestBookings = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/bookings');
+      const response = await axios.get('https://cabcompass-2.onrender.com/bookings');
       const latestBookingsData = response.data.slice(0, 5); // Get the latest 5 bookings
       setLatestBookings(latestBookingsData);
     } catch (error) {

@@ -15,7 +15,7 @@ function CreateBooking() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/availableCabs', {
+      const response = await fetch('https://cabcompass-2.onrender.com/availableCabs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ function CreateBooking() {
 
   const bookCab = async () => {
     try {
-      const response = await fetch('http://localhost:5000/bookCab', {
+      const response = await fetch('https://cabcompass-2.onrender.com/bookCab', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

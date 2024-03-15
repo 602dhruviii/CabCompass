@@ -20,7 +20,7 @@ const CabDetails = () => {
 
   const fetchCabs = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/cabs');
+      const response = await axios.get('https://cabcompass-2.onrender.com/cabs');
       setCabs(response.data);
     } catch (error) {
       console.error('Error fetching cabs:', error);
@@ -38,7 +38,7 @@ const CabDetails = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/cabs', newCab);
+      await axios.post('https://cabcompass-2.onrender.com/cabs', newCab);
       alert('Cab details added successfully!');
       fetchCabs(); // Fetch updated list of cabs after adding a new one
       setNewCab({
@@ -66,7 +66,7 @@ const CabDetails = () => {
   
     // Update the cab details in the backend
     try {
-      await axios.put(`http://localhost:5000/cabs/${id}`, {
+      await axios.put(`https://cabcompass-2.onrender.com/cabs/${id}`, {
         name: newName,
         pricePerMinute: newPricePerMinute,
         maxPassengers: newMaxPassengers,
@@ -88,7 +88,7 @@ const CabDetails = () => {
   
     // Send a DELETE request to the backend
     try {
-      await axios.delete(`http://localhost:5000/cabs/${id}`);
+      await axios.delete(`https://cabcompass-2.onrender.com/cabs/${id}`);
       alert('Cab deleted successfully!');
       fetchCabs(); // Fetch updated list of cabs after deleting
     } catch (error) {
