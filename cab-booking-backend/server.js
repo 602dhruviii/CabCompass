@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/cab_booking', {
+mongoose.connect('mongodb+srv://dhruvi:dhruvi%40123@cabcluster.kesqcvo.mongodb.net/cab_booking', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
